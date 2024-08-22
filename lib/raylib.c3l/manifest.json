@@ -1,0 +1,23 @@
+{ 
+  "provides" : "raylib",
+  "targets" : {
+    "macos-x64" : {
+      "linkflags" : [],
+      "dependencies" : [],
+      "linked-libraries" : ["raylib", "Cocoa.framework", "OpenGL.framework", "CoreVideo.framework", "GLUT.framework", "IOKit.framework", "c"]
+    },
+    "macos-aarch64" : {
+      "linkflags" : [],
+      "dependencies" : [],
+      "linked-libraries" : ["raylib", "Cocoa.framework", "OpenGL.framework", "CoreVideo.framework", "GLUT.framework", "IOKit.framework", "c"]
+    },
+    "linux-x64" : {
+      "linkflags" : [],
+      "dependencies" : [],
+      "linked-libraries" : ["raylib", "SDL2", "c"]
+    },
+	"windows-x64" : {
+		"linked-libraries" : ["raylib", "opengl32", "kernel32", "user32", "gdi32", "winmm", "winspool", "comdlg32", "advapi32", "shell32", "ole32", "oleaut32", "uuid", "odbc32", "odbccp32"],
+	}
+  }
+}
